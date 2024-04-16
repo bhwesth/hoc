@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Circle from "./components/shapes/Circle";
+import Box from "./components/shapes/Box";
+import Button from "./components/shapes/Button";
+import Draggable from "./components/Draggable"
+import MouseClickLog from "./components/MouseClicksLog";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default () => (
+    <div className="app">
+        {/* <Circle />
+        <Box />
+        <Button /> */}
+        {/* <Draggable /> */}
+        <MouseClickLog />
     </div>
-  );
-}
-
-export default App;
+);
