@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import withDraggable from "../HOCs/withDraggable";
 export default withDraggable((props) => (
     <div

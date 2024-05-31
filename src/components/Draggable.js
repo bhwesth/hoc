@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import withMouse from "./HOCs/withMouse";
 
 function Draggable(props) {
@@ -7,10 +7,6 @@ function Draggable(props) {
   const [oldCoords, setOldCoords] = useState({ x: 0, y: 0 });
   const [mouseDown, setMouseDown] = useState(false);
   const dragRef = useRef();
-
-  useEffect(() => {
-    
-  },[]);
 
   function handleMouseMove({ clientX, clientY }) {
     setOldCoords(mouse.coords);
